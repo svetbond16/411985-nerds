@@ -142,8 +142,23 @@
     </div>
   </footer>
   <section class="modal modal-write-to-us">
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <h2>Напишите нам</h2>
+    <form class="write-to-us-form" ation="https://echo.htmlacademy.ru" method="post">
+     <p>
+      <label for="name">Ваше имя</label>
+      <input class="write-to-us-name" type="text" id="name" name="name" placeholder="Ваше имя">
+     </p>
+     <p>
+       <label for="email">Ваш e-mail</label>
+       <input class="write-to-us-email" type="email" id="email" name="email" placeholder="email@example.com">
+     </p>
+     <p>
+       <label for="text">Текст письма</label>
+       <textarea class="write-to-us-text" rows="5" id="text" name="text" placeholder="В свободной форме"></textarea>
+     </p>
+     <button class="button" type="submit">Отправить</button>
+    </form>
+    <button type="button" class="modal-close">Закрыть</button>
   </section>
 </body>
 </html>
