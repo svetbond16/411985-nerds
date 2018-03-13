@@ -36,7 +36,8 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость</legend>
-         <input type="range" name="filter-price" id="filter-price" min="0" max="15000" step="1">
+          <label for="filter-price">
+          <input type="range" name="filter-price" id="filter-price" min="0" max="15000" step="1">
           <div>
             от <output name="min-price">0</output>
             до <output name="max-price">15000</output>
@@ -47,6 +48,7 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive">
+              <label for="adaptive">Адаптивная</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="fixed">
@@ -124,7 +126,7 @@
           <div class="grey-line"></div>
           <img src="img/img-pink.jpg" width="150" height="300" alt="
               Пинк">
-          <div class="catalog-item-info">
+          <div class="visually-hidden" class="catalog-item-info">
             <a href="#">
               <b>Pink App</b>
             </a>
@@ -135,7 +137,7 @@
         <li class="catalog-item">
           <div class="grey-line"></div>
           <img src="img/img-barbershop.jpg" width="150" height="300" alt="Барбершоп">
-          <div class="catalog-item-info">
+          <div class="visually-hidden" class="catalog-item-info">
             <a href="#">
               <b>Barbershop</b>
             </a>
@@ -147,7 +149,7 @@
           <div class="grey line"></div>
           <img src="img/img-mishka.jpg" width="150" height="300" alt="
               Мишка">
-          <div class="catalog-item-info">
+          <div class="visually-hidden" class="catalog-item-info">
             <a href="#">
               <b>Mishka</b>
             </a>
@@ -158,7 +160,7 @@
         <li class="catalog-item">
           <div class="grey-line"></div>
           <img src="img/img-aplus.jpg" width="150" height="300" alt="Курсы А Плюс">
-          <div class="catalog-item-info">
+          <div class="visually-hidden" class="catalog-item-info">
             <a href="#">
               <b>A Plus</b>
             </a>
@@ -166,11 +168,11 @@
             <a class=button href="cart.html">9900 руб.</a>
           </div>
         </li>
-        <li class="catalog-item">
+        <li class="visually-hidden" class="catalog-item">
           <div class="grey-line"></div>
           <img src="img/img-kvast.jpg" width="150" height="300" alt="
                   Кваст">
-          <div class="catalog-item-info">
+          <div class="visually-hidden" class="catalog-item-info">
             <a href="#">
               <b>Кваст</b>
             </a>
@@ -189,7 +191,7 @@
   </main>
   <footer class="main-footer">
     <div class="map">
-        <img src="img/map.jpg" width="1440" height="416">
+        <img src="img/map.jpg" width="1440" height="416" alt=alt="Карта проезда">
     </div>
     <section class="footer-contacts">
       <p class="contacts">
