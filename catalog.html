@@ -37,17 +37,24 @@
         <fieldset>
           <legend>Стоимость</legend>
          <input type="range" name="filter-price" id="filter-price" min="0" max="15000" step="1">
-          <div>от <output name="min-price">0</output>
-          до <output name="max-price">15000</output></div>
+          <div>
+            от <output name="min-price">0</output>
+            до <output name="max-price">15000</output>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Сетка</legend>
           <ul>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive"><label for="adaptive">Адаптивная</label>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive">
             </li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="fixed"><label for="fixed">Фиксированная</label>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
             </li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="responsive" id="responsive"><label for="responsive">Резиновая</label>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="responsive" id="responsive">
+              <label for="responsive">Резиновая</label>
             </li>
           </ul>
         </fieldset>
@@ -56,8 +63,7 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">
-              Слайдер</label>
+              <label for="filter-slider">Слайдер</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
@@ -81,13 +87,23 @@
       </form>
     </section>
     <section class="sorting">
-      <h2 class="visually-hidden">Сортировка</h2>
+      <h2>Сортировка</h2>
       <ul>
-        <li class="active"><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-        <li class="active"><a href="#">▼</a></li>
-        <li><a href="#">▲</a></li>
+        <li class="active">
+          <a href="#">По цене</a>
+        </li>
+        <li>
+          <a href="#">По типу</a>
+        </li>
+        <li>
+          <a href="#">По названию</a>
+        </li>
+        <li class="active">
+          <a href="#">Вниз</a>
+        </li>
+        <li>
+          <a href="#">Вверх</a>
+        </li>
       </ul>
     </section>
     <section class="catalog">
