@@ -41,36 +41,36 @@ a {
 }
 /*.button:active?*/
 
-.button.green {
+.services-button-green {
   background-color: #00ca74;
 }
 
-.button.green:hover {
+.services-button-green:hover {
   background-color: #00bc6c;
 }
 
-.button.green:focus {
+.services-button-green:focus {
   background-color: #00aa62;
   color: #4dc491;
 }
 
-.button.yellow {
+.services-button-yellow {
   background-color:#efc84a;
 }
 
-.button.yellow:hover {
+.services-button-yellow:hover {
   background-color:#eab534;
 }
 
-.button.yellow:focus {
+.services-button-yellow:focus {
   background-color:#e5a722;
   color: #ecc060;
 }
-a.main-header-logo:hover {
+.main-header-logo:hover {
   opacity: 0.8;
 }
 
-a.main-header-logo:focus {
+.main-header-logo:focus {
   opacity: 0.3;
 }
 
@@ -86,22 +86,22 @@ a.main-header-logo:focus {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
   color: #000000;
 }
-.site-navigation a:hover {
+.site-navigation-link:hover {
   color: #f59d9f;
 }
-.site-navigation a:focus {
+.site-navigation-link:focus {
   color: #dadada;
 }
 
-.slider b{
+.slider-header {
   font-size: 55px;
   line-height: 55px;
   font-weight: 700;
 }
-.slider p{
+.slider-text{
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -116,28 +116,28 @@ a.main-header-logo:focus {
   text-align: left;
 }
 
-.services-item h3 {
+.services-item-header {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
-.services-item p {
+.services-item-text {
   font-weight: 400;
   color: #283136;
 }
 
-.about-us b {
+.about-us-main-header {
   font-size: 45px;
   line-height: 45px;
 }
 
-.about-us p{
+.about-us-text {
   font-weight: 400;
   color: #283136;
 }
 
-.about-us .header {
+.about-us-header {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -147,7 +147,7 @@ a.main-header-logo:focus {
   font-weight: 400;
   color: #283136;
 }
-.info-table caption {
+.info-table-caption {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -169,14 +169,14 @@ a.main-header-logo:focus {
   list-style: none;
 }
 
-.partners-catalog a {
+.partners-catalog-link {
   opacity: 0.2;
 }
 
-.partners-catalog a:hover {
+.partners-catalog-link:hover {
   opacity: 1;
 }
-.partners-catalog a:focus {
+.partners-catalog-link:focus {
   opacity: 0.1;
 }
 
@@ -185,30 +185,56 @@ a.main-header-logo:focus {
   line-height: 55px;
 }
 
-.filter fieldset {
+.filter-fieldset {
   border: none;
 }
-.filter legend {
+.filter-legend,
+.sorting-header{
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.filter ul {
+
+.filter-option-list {
   list-style: none;
   line-height: 20px;
   font-size: 16px;
   color: #283136;
-
 }
-.filter-input:hover + label {
+
+.filter-option:hover  {
   color: #000000;
 }
 
-.filter-input:focus + label {
+.filter-input:focus + .filter-label {
   color: #283136;
-  opacity: 0,3;
+  opacity: 0.3;
 }
+
+.sorting-list {
+  list-style: none;
+  line-height: 14px;
+  font-size: 18px;
+  opacity: 0.3;
+  color: #000000;
+}
+.sorting-list-link {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.sorting-list-link:hover {
+  opacity:0.6;
+}
+
+.sorting-list-link:focus,
+.sorting-list-link:active {
+  color: #000000;
+  opacity: 1.0;
+}
+
+
 
 .catalog-list {
   list-style: none;
@@ -225,18 +251,18 @@ a.main-header-logo:focus {
  .pagination-list {
    list-style: none;
 }
-.pagination-item a {
+.pagination-link {
   color: #000000;
   background-color: #eeeeee;
 }
-.pagination-item a:hover{
+.pagination-link:hover{
   background-color: #dfdfdf;
 }
-.pagination-item a:focus{
+.pagination-link:focus{
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
-.pagination-item a:active {
+.pagination-link:active {
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
 }
@@ -247,7 +273,7 @@ a.main-header-logo:focus {
   color:#666666;
 }
 
-.contacts b {
+.contacts-header {
   font-size:18px;
   line-height:30px;
   font-weight: 700;
@@ -255,19 +281,19 @@ a.main-header-logo:focus {
   text-transform: uppercase;
 }
 
-.footer-social b{
+.footer-social-header {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
-.footer-social p{
+.footer-social-text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color:#444444;
 }
 
-.footer-social ul {
+.footer-social-list {
   list-style: none;
 }
 .social-button {
@@ -278,7 +304,7 @@ a.main-header-logo:focus {
   color: #000000;
   background-color: #ffffff;
 }
-.modal h2 {
+.modal-header {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
