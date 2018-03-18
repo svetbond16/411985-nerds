@@ -195,12 +195,12 @@ a {
   line-height: 55px;
 }
 
-.filter-fieldset {
+.filter-group {
   border: none;
 }
 
-.filter-legend,
-.sorting-header{
+.filter-title,
+.sorting-heading{
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;

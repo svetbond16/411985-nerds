@@ -37,8 +37,8 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-fieldset">
-          <legend class="filter-legend">Стоимость</legend>
+        <fieldset class="filter-group">
+          <legend class="filter-title">Стоимость</legend>
           <label class="filter-label" for="filter-price">
           <input type="range" name="filter-price" id="filter-price" min="0" max="15000" step="1">
           <div>
@@ -46,8 +46,8 @@
             до <output name="max-price">15000</output>
           </div>
         </fieldset>
-        <fieldset class="filter-fieldset">
-          <legend class="filter-legend">Сетка</legend>
+        <fieldset class="filter-group">
+          <legend class="filter-title">Сетка</legend>
           <ul class="filter-option-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive">
@@ -63,8 +63,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-fieldset">
-          <legend class="filter-legend">Особенности</legend>
+        <fieldset class="filter-group">
+          <legend class="filter-title">Особенности</legend>
           <ul class="filter-option-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -92,10 +92,10 @@
       </form>
     </section>
     <section class="sorting">
-      <h2 class="sorting-header">Сортировать</h2>
+      <h2 class="sorting-heading">Сортировать</h2>
       <ul class="sorting-list">
-        <li class="active">
-          <a class="sorting-list-link" href="#">По цене</a>
+        <li>
+          <a class="sorting-list-link active" href="#">По цене</a>
         </li>
         <li>
           <a class="sorting-list-link" href="#">По типу</a>
@@ -103,8 +103,8 @@
         <li>
           <a class="sorting-list-link" href="#">По названию</a>
         </li>
-        <li class="active">
-          <a class="sorting-list-link" href="#"><span class="visually-hidden">Вниз</span></a>
+        <li>
+          <a class="sorting-list-link active" href="#"><span class="visually-hidden">Вниз</span></a>
         </li>
         <li>
           <a class="sorting-list-link" href="#"><span class="visually-hidden">Вверх</span></a>
@@ -174,10 +174,18 @@
       </ul>
     </section>
     <ul class="pagination-list">
-      <li class="pagination-item-current"><a class="pagination-link">1</a></li>
-      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-      <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>
+      <li class="pagination-item">
+        <a class="pagination-link current">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">Следующая</a>
+      </li>
     </ul>
   </main>
   <footer class="main-footer">
