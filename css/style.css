@@ -27,7 +27,7 @@ a {
 
 .button:active {
   background-color: #d7373b;
-  color: #e26f72;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .button.green {
@@ -42,7 +42,7 @@ a {
 
 .button.green:active {
   background-color: #00aa62;
-  color: #4dc491;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .button.yellow {
@@ -56,7 +56,7 @@ a {
 
 .button.yellow:active {
   background-color:#e5a722;
-  color: #ecc060;
+  color:rgba(255, 255, 255, 0.3);
 }
 .main-header-logo:hover,
 .main-header-logo:focus {
@@ -214,6 +214,21 @@ a {
 .filter-input:focus + .filter-label {
   color: #283136;
   opacity: 0.3;
+}
+
+.filter-button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
 }
 
 .sorting-list {
