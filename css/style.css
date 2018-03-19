@@ -193,6 +193,13 @@ a {
   border: none;
 }
 
+.filter-price {
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
 .filter-title,
 .sorting-heading{
   font-size: 18px;
@@ -201,19 +208,62 @@ a {
   text-transform: uppercase;
 }
 
-.filter-option-list {
+.filter-option-list,
+.filter-features-list {
   list-style: none;
   line-height: 20px;
   color: #283136;
+  font-weight: 400;
 }
 
-.filter-option:hover  {
-  color: #000000;
+/* Filter option radio box */
+.filter-option-radio {
+  opacity: 0.4;
 }
 
-.filter-input:focus + .filter-label {
-  color: #283136;
-  opacity: 0.3;
+.filter-option-radio:hover {
+  opacity: 1.0;
+}
+
+.filter-option-radio:disabled {
+  opacity: 0.1;
+}
+
+/* Filter option label */
+.filter-option {
+  color: rgb(40, 49, 54);
+}
+
+.filter-option:hover,
+.filter-option:focus  {
+  color: color: rgb(0, 0, 0);
+}
+
+.filter-option-radio:disabled + .filter-option {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+/*filter features checkbox*/
+.filter-features-checkbox {
+  opacity: 0.4;
+}
+
+.filter-features-checkbox:hover,
+.filter-features-checkbox:focus {
+  opacity: 1.0;
+}
+
+.filter-features-checkbox:disabled {
+  opacity: 0.1;
+}
+
+/*filter features label*/
+.filter-features {
+  color: rgb(40, 49, 54);
+}
+
+.filter-features-checkbox:disabled + .filter-features  {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-button {
@@ -236,6 +286,7 @@ a {
   list-style: none;
   line-height: 14px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .sorting-list-link {
@@ -298,6 +349,7 @@ a {
 .pagination-link:active{
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-link.current {
@@ -339,6 +391,8 @@ a {
 .modal {
   color: #000000;
   background-color: #ffffff;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .modal-heading {
@@ -347,30 +401,22 @@ a {
   font-weight: 500;
 }
 
-.write-to-us-form input[type="text"],
-.write-to-us-form input[type="email"],
-.write-to-us-form textarea{
-  font: inherit;
-  color: #000000;
+.write-to-us-input {
+  color: rgba(68, 68, 68, 0.5);
   border: 2px solid #d7dcde;
 }
 
-.write-to-us-form input:hover,
-.write-to-us-form input:hover,
-.write-to-us-form textarea:hover{
+.write-to-us-input:hover,
+.write-to-us-input:focus {
   border: 2px solid #b4b9bb;
 }
 
-.write-to-us-form input:focus,
-.write-to-us-form input:focus,
-.write-to-us-form textarea:focus{
+.write-to-us-input:active {
   border: 2px solid #000000;
-  color: #444444;/*цвет тескта не изменяется*/
+  color: rgb(68, 68, 68);
 }
-/*
-.write-to-us-form input:invalid,
-.write-to-us-form textarea:invalid{
-  border: 2px solid #e74246;
+
+.write-to-us-input:invalid {/*красной становится только рамка, цвет плейсхолдера не изменяется :(*/
+  border-color:#e74246;
   color: #e74246;
 }
-*/

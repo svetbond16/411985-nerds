@@ -41,7 +41,7 @@
           <legend class="filter-title">Стоимость</legend>
           <label class="filter-label" for="filter-price">
           <input type="range" name="filter-price" id="filter-price" min="0" max="15000" step="1">
-          <div>
+          <div class="filter-price">
             от <output name="min-price">0</output>
             до <output name="max-price">15000</output>
           </div>
@@ -49,42 +49,42 @@
         <fieldset class="filter-group">
           <legend class="filter-title">Сетка</legend>
           <ul class="filter-option-list">
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive">
-              <label class="filter-label" for="adaptive">Адаптивная</label>
+            <li class="filter-options">
+              <input class="visually-hidden filter-option-radio" type="radio" name="grid" value="adaptive" id="adaptive">
+              <label class="filter-option" for="adaptive">Адаптивная</label>
             </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="fixed">
-              <label class="filter-label" for="fixed">Фиксированная</label>
+            <li class="filter-options">
+              <input class="visually-hidden filter-option-radio" type="radio" name="grid" value="fixed" id="fixed">
+              <label class="filter-option" for="fixed">Фиксированная</label>
             </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="responsive" id="responsive">
-              <label class="filter-label" for="responsive">Резиновая</label>
+            <li class="filter-options">
+              <input class="visually-hidden filter-option-radio" type="radio" name="grid" value="responsive" id="responsive">
+              <label class="filter-option" for="responsive">Резиновая</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter-group">
           <legend class="filter-title">Особенности</legend>
-          <ul class="filter-option-list">
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-              <label class="filter-label" for="filter-slider">Слайдер</label>
+          <ul class="filter-features-list">
+            <li class="filter-features">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+              <label class="filter-features" for="filter-slider">Слайдер</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
-              <label class="filter-label" for="filter-advantages">Блок преимуществ</label>
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+              <label class="filter-features" for="filter-advantages">Блок преимуществ</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-              <label class="filter-label" for="filter-news">Новости</label>
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="news" id="filter-news" checked>
+              <label class="filter-features" for="filter-news">Новости</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-              <label class="filter-label" for="filter-gallery">Галерея</label>
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+              <label class="filter-features" for="filter-gallery">Галерея</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
-              <label class="filter-label" for="filter-cart">Корзина</label>
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="cart" id="filter-cart">
+              <label class="filter-features" for="filter-cart">Корзина</label>
             </li>
           </ul>
         </fieldset>
@@ -225,15 +225,15 @@
     <form class="write-to-us-form" ation="https://echo.htmlacademy.ru" method="post">
      <p>
       <label for="name">Ваше имя</label>
-      <input class="write-to-us-name" type="text" id="name" name="name" placeholder="Ваше имя">
+      <input class="write-to-us-input" type="text" id="name" name="name" placeholder="Имя Фамилия">
      </p>
      <p>
        <label for="email">Ваш e-mail</label>
-       <input class="write-to-us-email" type="email" id="email" name="email" placeholder="email@example.com">
+       <input class="write-to-us-input" type="email" id="email" name="email" placeholder="email@example.com">
      </p>
      <p>
        <label for="text">Текст письма</label>
-       <textarea class="write-to-us-text" rows="5" id="text" name="text" placeholder="В свободной форме"></textarea>
+       <textarea class="write-to-us-input" rows="5" id="text" name="text" placeholder="В свободной форме"></textarea>
      </p>
      <button class="button" type="submit">Отправить</button>
     </form>
