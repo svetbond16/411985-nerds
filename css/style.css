@@ -219,6 +219,7 @@ a {
 .filter-button {
   color: #000000;
   background-color: #eeeeee;
+  font-weight: 500;
 }
 
 .filter-button:hover,
@@ -264,6 +265,23 @@ a {
  .catalog-item:hover,
  .catalog-item:focus {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-info {
+  background-color: #eeeeee;
+}
+
+.catalog-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-text {
+  line-height:18px;
+  font-weight:400;
+  color:#666666;
 }
 
  .pagination-list {
