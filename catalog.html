@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container header-container">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+      <a class="main-header-logo inner-page" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
       <ul class="site-navigation">
@@ -21,7 +22,7 @@
           <a class="site-navigation-link" href="clients.html">Клиенты</a>
         </li>
         <li class="site-navigation-current">
-          <a class="site-navigation-link">Магазин</a>
+          <a class="site-navigation-link inactive">Магазин</a>
         </li>
         <li>
           <a class="site-navigation-link" href="contacts.html">Контакты</a>
@@ -31,9 +32,13 @@
          <a class="cart" href="cart.html">Корзина</a>
        </div>
      </nav>
-     <h1 class="page-title">Магазин готовых шаблонов</h1>
-  </header>
+     <div class="catalog-title">
+       <h1 class="page-title">Магазин готовых шаблонов</h1>
+     </div>
+    </header>
+ </div>
   <main class="container">
+    <div class="catalog-columns">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -91,6 +96,7 @@
         <button type="submit" class="filter-button button">Показать</button>
       </form>
     </section>
+    <div class="sorting-catalog-container">
     <section class="sorting">
       <h2 class="sorting-heading">Сортировать</h2>
       <ul class="sorting-list">
@@ -116,7 +122,7 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <div class="grey-line"></div>
-          <img src="img/img-sedona.jpg" width="150" height="300" alt="Седона">
+          <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Sedona</a>
             <p class="catalog-text">Информационный сайт для туристов</p>
@@ -125,7 +131,7 @@
         </li>
         <li class="catalog-item">
           <div class="grey-line"></div>
-          <img src="img/img-pink.jpg" width="150" height="300" alt="
+          <img src="img/img-pink.jpg" width="360" height="576" alt="
               Пинк">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Pink App</a>
@@ -135,7 +141,7 @@
         </li>
         <li class="catalog-item">
           <div class="grey-line"></div>
-          <img src="img/img-barbershop.jpg" width="150" height="300" alt="Барбершоп">
+          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп">
           <div  class="catalog-info">
             <a class="catalog-title" href="#">Barbershop</a>
             <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
@@ -144,7 +150,7 @@
         </li>
         <li class="catalog-item">
           <div class="grey line"></div>
-          <img src="img/img-mishka.jpg" width="150" height="300" alt="
+          <img src="img/img-mishka.jpg" width="360" height="576" alt="
               Мишка">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Mishka</a>
@@ -154,16 +160,16 @@
         </li>
         <li class="catalog-item">
           <div class="grey-line"></div>
-          <img src="img/img-aplus.jpg" width="150" height="300" alt="Курсы А Плюс">
+          <img src="img/img-aplus.jpg" width="360" height="576" alt="Курсы А Плюс">
           <div class="catalog-info">
             <a class="catalog-title" href="#">A Plus</a>
             <p class="catalog-text">Лендинг курсов повышения квалификации</p>
             <a class=button href="cart.html">9900 руб.</a>
           </div>
         </li>
-        <li class="visually-hidden" class="catalog-item">
+        <li class="catalog-item">
           <div class="grey-line"></div>
-          <img src="img/img-kvast.jpg" width="150" height="300" alt="
+          <img src="img/img-kvast.jpg" width="360" height="576" alt="
                   Кваст">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Кваст</a>
@@ -187,20 +193,28 @@
         <a class="pagination-link" href="#">Следующая</a>
       </li>
     </ul>
+  </div>
+</div>
+
   </main>
   <footer class="main-footer">
+    <div class="map-contacts">
     <div class="map">
-      <img src="img/map.jpg" width="1440" height="416" alt=alt="Карта проезда">
+      <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда">
     </div>
     <section class="footer-contacts">
       <p class="contacts">
-        <b class="contacts-header">Nёrds Design Studio</b><br> 191186, г.Санкт-Петербург,<br> ул.Большая Конюшенная, д.19/8<br> тел.+7(812)275-75-75
+        <b class="contacts-heading">Nёrds Design Studio</b><br> 191186, г.Санкт-Петербург,<br> ул.Большая Конюшенная, д.19/8<br><br> тел.+7(812)275-75-75
       </p>
       <a class="button" href="#">Напишите нам</a>
     </section>
-    <div class="footer-social">
+  </div>
+  <div class="container">
+  <div class="footer-social">
+      <div class="footer-social-wrapper">
       <b class="footer-social-heading">Давайте дружить,это выгодно!</b>
       <p class="footer-social-text">Скидка 10% для друзей из социальных сетей</p>
+     </div>
       <ul class="footer-social-list">
         <li>
           <a class="social-button" href="#">
@@ -209,7 +223,7 @@
         </li>
         <li>
           <a class="social-button" href="#">
-            <span class="visually-hidden">Фейсбук</span>
+           <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li>
@@ -219,13 +233,14 @@
         </li>
       </ul>
     </div>
+  </div>
   </footer>
   <section class="modal modal-write-to-us">
     <h2 class="modal-heading">Напишите нам</h2>
     <form class="write-to-us-form" ation="https://echo.htmlacademy.ru" method="post">
      <p>
       <label for="name">Ваше имя</label>
-      <input class="write-to-us-input" type="text" id="name" name="name" placeholder="Имя Фамилия">
+      <input class="write-to-us-input" type="text" id="name" name="name" placeholder="Ваше имя">
      </p>
      <p>
        <label for="email">Ваш e-mail</label>
