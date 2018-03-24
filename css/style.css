@@ -6,6 +6,7 @@ body{
   line-height: 24px;
   font-weight: 500;
   color: #000000;
+  min-height: 2476px; /*лишнее?*/
 }
 
 a {
@@ -58,6 +59,22 @@ a {
   background-color:#e5a722;
   color:rgba(255, 255, 255, 0.3);
 }
+
+.container {
+  width:1200px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: 0 auto;
+}
+
+.header-container{
+  width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #eeeeee;
+}
+
+
 .main-header-logo:hover,
 .main-header-logo:focus {
   opacity: 0.8;
@@ -421,26 +438,28 @@ a {
   color: #e74246;
 }
 
-/* ----- Сеточные стили ----- */
-body {
-  width: 1200px;
-  min-height: 2476px;
-  padding-left: 120px;
-  padding-right: 120px;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
+/* ----- Сеточные стили ----- */
+
+
+
+
 .main-header {
-  /* Временно для сетки */
-  min-height: 545px;
-  outline: 1px solid #666;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-navigation {
   display: flex;
   justify-content: space-between;
-   /* Временно для сетки */
-   min-height: 114px;
-   outline: 1px solid #666;
 }
 
 .main-header-logo {
@@ -449,8 +468,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 49px;
-  /* Временно для сетки */
-  outline: 1px solid #666;
 }
 
 .site-navigation {
@@ -463,10 +480,6 @@ body {
   padding-left: 180px;
   padding-right: 180px;
   padding-top: 83px;
-
-  /* Временно для сетки */
-  min-height: 70px;
-  outline: 1px solid #666;
 }
 
 .cart {
@@ -477,17 +490,12 @@ body {
   padding-right: 20px;
   padding-top: 83px;
   justify-content: flex-end;
-  /* Временно для сетки */
-  min-height: 70px;
-  outline: 1px solid #666;
 }
 
 .slider {
   position: relative;
   width: 1200px;
   height: 430px;
-  /* Временно для сетки */
-  outline: 1px solid #666;
 }
 
 .slide-1, .slide-2, .slide-3 {
@@ -512,6 +520,7 @@ body {
 
 .services{
   width: 1200px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -520,41 +529,26 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0 80px 0 20px;
-
   list-style: none;
-  /* Временно для сетки */
-  min-height: 346px;
-  outline: 1px solid #666;
 }
 
 .services-item {
   width: 300px;
-
-  /* Временно для сетки */
-  min-height: 346px;
-  outline: 1px solid #666;
 }
 
 .index-columns {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
   padding: 40px 20px;
-  width: 1200px;
-
 }
 
 .about-us {
   width: 660px;
-  /* Временно для сетки */
-  min-height: 415px;
-  outline: 1px solid #666;
 }
 
 .info {
   width: 360px;
-  /* Временно для сетки */
-  min-height: 415px;
-  outline: 1px solid #666;
 }
 
 .partners-catalog {
@@ -563,10 +557,7 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-
   list-style: none;
-    /* Временно для сетки */
-  outline: 1px solid #666;
 }
 
 .partners-catalog-item {
@@ -575,25 +566,15 @@ body {
   justify-content: center
   width: 260px;
   margin-bottom: 80px;
-  /* Временно для сетки */
-  min-height: 183px;
-  outline: 1px solid #666;
 }
 
 .main-footer {
-  width: 1200px;
-  /* Временно для сетки */
-  min-height: 564px;
-  outline: 1px solid #666;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .map {
   position: absolute;
-  margin-left: -120px;
-  margin-right: -120px;
-   /* Временно для сетки */
-  min-height: 416px;
-  outline: 1px solid #666;
 }
 
 .footer-contacts {
@@ -607,9 +588,6 @@ body {
   left: 140px;
   width: 320px;
   background-color: #ffffff;
-  /* Временно для сетки */
-  min-height: 310px;
-  outline: 1px solid #666;
 }
 
 .map-contacts {
@@ -619,18 +597,12 @@ body {
 .footer-social {
   display: flex;
   padding-top: 416px;
-  width:1200px;
-  /* Временно для сетки */
- min-height: 80px;
- outline: 1px solid #666;
+  mar
 }
 
 .footer-social-wrapper {
   order:2;
   width: 560px;
-  /* Временно для сетки */
-  min-height: 80px;
-  outline: 1px solid #666;
 }
 
 .footer-social-list {
@@ -639,8 +611,4 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  /* Временно для сетки */
- min-height: 80px;
- outline: 1px solid #666;
 }
