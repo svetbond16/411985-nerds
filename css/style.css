@@ -535,11 +535,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   top: 54px;
   left: 140px;
-  width: 320px;
+  width: 319px;
+  height: 308px;
   background-color: #ffffff;
 }
 
@@ -560,7 +560,7 @@ a {
 
 .footer-social {
   display: flex;
-  padding-top: 416px;
+  padding-top: 486px;
   mar
 }
 
