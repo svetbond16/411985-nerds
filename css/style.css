@@ -6,7 +6,6 @@ body{
   line-height: 24px;
   font-weight: 500;
   color: #000000;
-  min-height: 2476px; /*лишнее?*/
 }
 
 a {
@@ -61,23 +60,14 @@ a {
 }
 
 .container {
-  width:1200px;
-  padding-left: 120px;
-  padding-right: 120px;
+  width:1160px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-}
-
-.header-container{
-  width: 1440px;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #eeeeee;
 }
 
 .main-header {
   background-color: #eeeeee;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main-navigation   {
@@ -89,8 +79,6 @@ a {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 49px;
 }
 
@@ -106,12 +94,9 @@ a {
 .site-navigation {
   display: flex;
   margin: 0;
-  padding: 0;
   list-style: none;
   width: 440px;
   justify-content: space-around;
-  padding-left: 180px;
-  padding-right: 180px;
   padding-top: 83px;
 }
 
@@ -125,65 +110,44 @@ a {
 .site-navigation-link:not(.inactive):focus,
 .cart:hover,
 .cart:focus  {
-  color: #f59d9f;
+  color: #fb565a;
 }
 
 .site-navigation-link:not(.inactive):active,
 .cart:active {
-  color: #dadada;
+  opacity: 0.3;
 }
 
 .cart {
   display: flex;
-  margin: 0;
-  padding: 0;
   width: 200px;
-  padding-right: 20px;
   padding-top: 83px;
   justify-content: flex-end;
 }
 
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider {
   position: relative;
-  width: 1200px;
   height: 430px;
-}
-
-.slide-1, .slide-2, .slide-3 {
-  position: absolute;
-  padding-left: 20px;
-}
-
-.slide-1 {
-  z-index: 0;
-  padding-top: 80px;
-}
-
-.slide-2 {
-  z-index: 1;
-  opacity:0;
-}
-
-.slide-3 {
-  z-index: 2;
-  opacity: 0;
 }
 
 .slider-heading {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .slider-text{
-  font-size: 16px;
-  line-height: 24px;
+  margin: 0;
   font-weight: 400;
   color:#283136;
 }
 
 .services{
-  width: 1200px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -192,12 +156,11 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0 80px 0 20px;
+  padding: 0 80px 0 20px;/*исправить, когда будет правильный центровщик*/
   list-style: none;
 }
 
 .services-item {
-  text-align: left;
   width: 300px;
 }
 
@@ -206,9 +169,11 @@ a {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin:0;
 }
 
 .services-text {
+  margin:0;
   font-weight: 400;
   color: #283136;
 }
@@ -216,8 +181,7 @@ a {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
 .about-us {
@@ -230,16 +194,20 @@ a {
 }
 
 .about-us-text {
+  margin: 0;
   font-weight: 400;
   color: #283136;
 }
 
 .about-us-heading {
+  margin: 0;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .about-us-services {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-weight: 400;
   color: #283136;
@@ -253,7 +221,6 @@ a {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  line-height: 24px;
 }
 
 .first-row {
@@ -269,19 +236,28 @@ a {
 
 .partners-catalog {
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .partners-catalog-item {
   display: flex;
   align-items: center;
-  justify-content: center
-  width: 260px;
-  margin-bottom: 80px;
+  justify-content: center;
+  height: 180px;
+  /*margin-bottom тут удалила, задать блоку*/
+}
+
+.outer-item{
+   width: 280px;
+}
+
+.inner-item{
+   width: 298px;
 }
 
 .partners-catalog-link {
@@ -307,6 +283,8 @@ a {
 }
 
 .page-title {
+  padding: 0;
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
 }
@@ -314,18 +292,16 @@ a {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-  /*временно для сетки*/
-  outline: 3px solid #666;
 }
 
 .filters {
   width: 260px;
   margin-right: 140px;
-  /*временно для сетки*/
-  outline: 3px solid #666;
 }
 
 .filter-group {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -337,6 +313,8 @@ a {
 
 .filter-title,
 .sorting-heading{
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -418,19 +396,19 @@ a {
 }
 
 .sorting-catalog-container {
-  /*временно для сетки*/
-  outline: 3px solid #666;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting {
   padding: 0;
   margin: 0;
   width: 760px;
-  /*временно для сетки*/
-  outline: 3px solid #666;
 }
 
 .sorting-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 14px;
   font-size: 18px;
@@ -464,8 +442,6 @@ a {
    width: 360px;
    margin-bottom: 33px;
    margin-right: 40px;
-   /*временно для сетки*/
-   outline: 3px solid #666;
  }
 
  .catalog-item:nth-child(2n) {
@@ -491,9 +467,6 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  /* Временно для сетки */
-  min-height: 47px;
-  outline: 3px solid #666;
 }
 
 .pagination-link {
@@ -518,23 +491,21 @@ a {
 }
 
 .main-footer {
+}
+
+.map-contacts {
+  width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.map {
+  position: relative;
   width: 1440px;
   margin: 0 auto;
 }
 
-.map-contacts {
-  position: relative;
-}
-
-.map {
-  position: absolute;
-}
-
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 54px;
   left: 140px;
@@ -544,6 +515,7 @@ a {
 }
 
 .contacts {
+  margin: 0;
   font-size:16px;
   line-height:18px;
   font-weight: 400;
@@ -560,12 +532,10 @@ a {
 
 .footer-social {
   display: flex;
-  padding-top: 486px;
-  mar
+  padding: 70px 0;
 }
 
 .footer-social-wrapper {
-  order:2;
   width: 560px;
 }
 
@@ -576,13 +546,13 @@ a {
 }
 
 .footer-social-text {
+  margin:0;
   line-height: 22px;
   font-weight: 400;
   color:#444444;
 }
 
 .footer-social-list {
-  order:1;
   width: 260px;
   margin: 0;
   padding: 0;
@@ -599,7 +569,7 @@ a {
 .modal-heading {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
+  margin:0;
 }
 
 .write-to-us-input {
