@@ -138,7 +138,7 @@
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Sedona</a>
-            <p class="catalog-text">Информационный сайт<br> для туристов</p>
+            <p class="catalog-text">Информационный сайт для туристов</p>
             <a class=button  href="cart.html">9900 руб.</a>
           </div>
         </li>
@@ -159,7 +159,7 @@
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп">
           <div  class="catalog-info">
             <a class="catalog-title" href="#">Barbershop</a>
-            <p class="catalog-text">Сайт салона красоты.<br> Для мужчин, да.</p>
+            <p class="catalog-text">Сайт салона красоты.</br> Для мужчин, да.</p>
             <a class=button href="cart.html">9900 руб.</a>
           </div>
         </li>
@@ -182,7 +182,7 @@
           <img src="img/img-aplus.jpg" width="360" height="576" alt="Курсы А Плюс">
           <div class="catalog-info">
             <a class="catalog-title" href="#">A Plus</a>
-            <p class="catalog-text">Лендинг курсов повышения<br> квалификации</p>
+            <p class="catalog-text">Лендинг курсов повышения квалификации</p>
             <a class=button href="cart.html">9900 руб.</a>
           </div>
         </li>
@@ -194,7 +194,7 @@
                   Кваст">
           <div class="catalog-info">
             <a class="catalog-title" href="#">Кваст</a>
-            <p class="catalog-text">Промо-сайт производителя<br> крафтового кваса</p>
+            <p class="catalog-text">Промо-сайт производителя крафтового кваса</p>
             <a class=button href="cart.html">9900 руб.</a>
           </div>
         </li>
@@ -220,7 +220,7 @@
 <footer class="main-footer">
   <div class="map-contacts">
    <div class="map">
-    <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда">
+    <img src="img/map_1200px.jpg" width="1200" height="416" alt="Карта проезда">
    </div>
    <section class="footer-contacts">
     <p class="contacts">
@@ -257,24 +257,41 @@
  </footer>
  <section class="modal modal-write-to-us">
     <h2 class="modal-heading">Напишите нам</h2>
-    <form class="write-to-us-form" ation="https://echo.htmlacademy.ru" method="post">
+    <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="name-email">
      <p>
       <label for="name">Ваше имя</label>
-      <input class="write-to-us-input" type="text" id="name" name="name" placeholder="Ваше имя">
+      <input class="write-to-us-input" type="text" required id="name" name="name" placeholder="Ваше имя">
      </p>
      <p>
        <label for="email">Ваш e-mail</label>
-       <input class="write-to-us-input" type="email" id="email" name="email" placeholder="email@example.com">
+       <input class="write-to-us-input" required type="email" id="email" name="email" placeholder="email@example.com">
      </p>
     </div>
      <p>
        <label for="text">Текст письма</label>
-       <textarea class="write-to-us-input write-to-us-text" rows="5" id="text" name="text" placeholder="В свободной форме"></textarea>
+       <textarea class="write-to-us-input write-to-us-text" rows="5" id="text" name="text" required placeholder="В свободной форме"></textarea>
      </p>
      <button class="button send" type="submit">Отправить</button>
     </form>
     <button type="button" class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <script>
+   var link = document.querySelector(".feedback");
+   var popup = document.querySelector(".modal-write-to-us");
+   var close = popup.querySelector(".modal-close");
+   var nameInput = popup.querySelector("[name=name]");
+
+   link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      nameInput.focus();
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+  </script>  
 </body>
 </html>
