@@ -7,6 +7,7 @@ var emailInput = popup.querySelector("[name=email]");
 var textInput = popup.querySelector("[name=text]");
 var isStorageSupport = true;
 var storage = "";
+var map = document.querySelector(".map-img")
 
 try {
   storage = localStorage.getItem("name");
@@ -42,6 +43,8 @@ form.addEventListener("submit", function (evt) {
     }
   }
 });
+
+map.classList.remove("no-js")
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
